@@ -1,0 +1,98 @@
+body {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  padding: 100px;
+  background-color: cornflowerblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  flex-grow: inherit;
+  justify-content:center;
+  align-items:center;
+}
+
+.img {
+  width: 100px;
+}
+
+
+.container h2 {
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+.cardcon {
+    position: relative;
+    background-color: white;
+    width: 400px;
+    height: 450px;
+    border: 2px solid black;
+    border-radius: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 8px 8px rgba(211, 202, 202, 0.1);
+    backface-visibility: hidden;
+    
+}
+
+.cardcon:hover {
+  transform: perspective(1000px) rotateY(10deg) scale(1.1);
+  box-shadow: 12px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.btn {
+    border-radius: 7px;
+    border: 1px solid white;
+    background-color: cornflowerblue;
+    color: white;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+.buyNow{
+  width:100px;
+}
+
+.logAllYou {
+  width: 70%;
+  right: 100px;
+}
+
+.cart-container {
+
+  position: absolute;
+  top: 0;
+  right:0;
+  color: white;
+  width: 325px;
+  height: 375px;
+  border: 2px solid black;
+  border-radius: 20%;
+  background-color: cornflowerblue;
+}
+
+.cart-container img {
+    width: 20px;
+}
+
+.cart-icon {
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+}
